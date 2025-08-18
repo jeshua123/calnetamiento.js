@@ -133,6 +133,22 @@ if(numero%3===0&&numero%5===0){numero="fizzbuzz"}
 if(numero%3===0){numero="fizz"}
 if(numero%5===0){numero="buzz"}
 
+switch (numero) {
+    case numero%3===0&&numero%5===0:
+        numero="fizzbuzz"
+        break;
+    case numero%3===0:
+        numero="fizz"
+        break;
+    case numero%5===0:
+        numero="buzz"
+        break;
+
+
+}
+
+
+
 console.log(numero)
  }
 comparativa(5)
