@@ -129,14 +129,13 @@ console.log(nota>=60? "Aprobado":"Reprobado")
 
 function comparativa(numero) {
 
+if(numero%3===0&&numero%5===0){numero="fizzbuzz"}
 if(numero%3===0){numero="fizz"}
-
 if(numero%5===0){numero="buzz"}
 
-if(numero%3===0&&numero%5===0){numero="fizzbuzz"}
 console.log(numero)
  }
-comparativa(30)
+comparativa(5)
 //3. Declara una variable rol = "admin" y usa un switch para imprimir distintos mensajes según sea "admin", "user", "guest".
 //4. Usa un for para imprimir los números del 1 al 10.
 //5. Crea una función que reciba un array de edades y use un for para contar cuántas son mayores de edad (>= 18).
