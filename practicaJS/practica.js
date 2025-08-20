@@ -153,5 +153,33 @@ console.log(numero)
  }
 comparativa(5)
 //3. Declara una variable rol = "admin" y usa un switch para imprimir distintos mensajes según sea "admin", "user", "guest".
+
+let rol="admin" 
+
+switch (rol) {
+    case "admin":
+        console.log("es administrador")
+        break;
+    case "user":
+        console.log("es usuario")
+        break;
+    case "guest":
+        console.log("es invitado")
+        break;
+}
 //4. Usa un for para imprimir los números del 1 al 10.
+
+for (let number=1; number <=10 ; number++) {
+   console.log(number)
+}
+
 //5. Crea una función que reciba un array de edades y use un for para contar cuántas son mayores de edad (>= 18).
+
+const edades=[12,30,50,75,15,18,39,45]
+let conteo=0
+for (let index = 0; index < edades.length; index++) {
+ 
+if (edades[index]>= 18){conteo=conteo+1}
+
+}
+console.log(conteo)
