@@ -144,10 +144,7 @@ switch (numero) {
         numero="buzz"
         break;
 
-
 }
-
-
 
 console.log(numero)
  }
@@ -183,3 +180,31 @@ if (edades[index]>= 18){conteo=conteo+1}
 
 }
 console.log(conteo)
+
+
+//✅ 5. Arrays
+//1. Crea un array de 5 frutas. Muestra la primera y última usando índices.
+
+const frutas=["fresa","manzana","uva","limon","banana"]
+
+console.log("primerafruta "+frutas[0])
+console.log("ultima fruta "+ frutas[4])
+
+//2. Usa .map() para convertir un array de nombres a un array con cada nombre en mayúsculas.
+
+//3. Usa .filter() para obtener los números mayores a 10 de [3, 12, 7, 20, 5].4. Crea una función que reciba un array de personas (objetos con nombre y edad) y devuelva un array solo con los mayores de 18.
+
+//5. Usa .find() para buscar si existe una fruta "manzana" en un array,y .includes() para saber si "banana" está en él.
+
+
+//✅ 6. Objetos
+
+//1. Crea un objeto persona con nombre, edad y activo. Imprime unade sus propiedades.
+
+//2. Desestructura el objeto anterior y muestra nombre y edad en consola.
+
+//3. Crea una función que reciba un objeto usuario y devuelva un string como: "Ana tiene 25 años".
+
+//4. Usa el spread operator para crear un nuevo objeto a partir de persona, pero agregando una propiedad ciudad.
+
+//5. Crea un array de objetos con varias personas. Usa .map() para obtener un array con los nombres, y .filter() para los mayores de edad.
