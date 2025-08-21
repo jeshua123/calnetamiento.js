@@ -185,25 +185,70 @@ console.log(conteo)
 //✅ 5. Arrays
 //1. Crea un array de 5 frutas. Muestra la primera y última usando índices.
 
-const frutas=["fresa","manzana","uva","limon","banana"]
+const frutas=["fresa","manzana","uva","limón","banana"]
 
 console.log("primerafruta "+frutas[0])
 console.log("ultima fruta "+ frutas[4])
 
 //2. Usa .map() para convertir un array de nombres a un array con cada nombre en mayúsculas.
 
-//3. Usa .filter() para obtener los números mayores a 10 de [3, 12, 7, 20, 5].4. Crea una función que reciba un array de personas (objetos con nombre y edad) y devuelva un array solo con los mayores de 18.
+const listaNombres=["orlando","juan","luis","marcos","fulano","mengano","john"]
+
+let listaNombresMayúsculas=listaNombres.map(nombre =>nombre.toUpperCase())
+
+console.log(listaNombresMayúsculas)
+
+
+//3. Usa .filter() para obtener los números mayores a 10 de [3, 12, 7, 20, 5].
+
+const arrayNumbers=[3, 12, 7, 20, 5]
+
+let filteredArray=arrayNumbers.filter((number) => number>10)
+
+console.log(filteredArray)
+
+// 4. Crea una función que reciba un array de personas (objetos con nombre y edad) y devuelva un array solo con los mayores de 18.
+
+const personas= [
+    {nombre:"Jaime",edad:35},
+    {nombre:"Hugo",edad:89},
+    {nombre:"Paco",edad:10},
+    {nombre:"luis",edad:35},
+    {nombre:"Donald",edad:47},
+]
+let personasMayoresDeEdad=personas.filter((obj_persona) => obj_persona.edad>18)
+console.log(personasMayoresDeEdad)
 
 //5. Usa .find() para buscar si existe una fruta "manzana" en un array,y .includes() para saber si "banana" está en él.
 
+const ArrayFrutas=["manzana","pera","limón","uva","melon","kiwi"]
+
+let encuentraManzana=ArrayFrutas.find(fruta =>fruta==="manzana")
+let hayBanana=ArrayFrutas.includes("banana")
+
+console.log(encuentraManzana,hayBanana)
 
 //✅ 6. Objetos
 
-//1. Crea un objeto persona con nombre, edad y activo. Imprime unade sus propiedades.
+//1. Crea un objeto persona con nombre, edad y activo. Imprime una de sus propiedades.
+const Persona={
+NOMBRE:"Juana",
+ EDAD:25,
+ACTIVO:true,
+}
+console.log(Persona.NOMBRE)
 
 //2. Desestructura el objeto anterior y muestra nombre y edad en consola.
 
+let { NOMBRE, EDAD , ACTIVO } = Persona
+
+console.log(NOMBRE,EDAD)
+
 //3. Crea una función que reciba un objeto usuario y devuelva un string como: "Ana tiene 25 años".
+const Usuario={
+nombre:"Juana",
+ edad:25,
+}
 
 //4. Usa el spread operator para crear un nuevo objeto a partir de persona, pero agregando una propiedad ciudad.
 
